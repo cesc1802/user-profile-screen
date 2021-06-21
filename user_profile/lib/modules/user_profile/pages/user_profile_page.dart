@@ -15,7 +15,9 @@ class UserProfilePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Profile'),
       ),
-      body: UserProfile(),
+      body: SingleChildScrollView(
+        child: UserProfile(),
+      ),
       bottomNavigationBar: CustomBottomNavBar(
         selectedMenu: MenuState.profile,
       ),
